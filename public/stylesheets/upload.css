@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Helvetica 45 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica 45 Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff');
+}
+
+body, html { 
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family:'Helvetica 45 Light';
+    font-style: normal; 
+}
+
+h1, h2, span, p 
+{     
+    font-family:'Helvetica 45 Light';
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#main-content {
+     overflow: hidden;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    left: 703px;
+    display: none;
+}
+
+.posters-content {
+    position: static;
+    overflow: hidden; 
+    padding-bottom: 6%;
+}
+
+.posters-content section {
+    margin-top: 5%;
+    font-family:'Helvetica 45 Light';
+    position: relative; 
+    overflow: hidden;
+    top: 0; 
+    padding-bottom: 15px;
+    font-weight: 580;
+    background: url('../images/upload-back.jpg') repeat-y;
+}
+
+#upload-content{
+    background-color: #fff;
+} 
+
+.posters-content-wrapper {
+    overflow: hidden;
+}
+
+.posters-content h2 {
+    color: #000;
+    font-family:'Helvetica 45 Light';
+    padding-left: 66px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+
+.posters-content h4 {
+    color: #000;
+    font-family:'Helvetica 45 Light';
+    padding-left: 66px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+label
+{
+    font-size: 14px;
+}
+
+textarea{
+    resize:none;
+}
+.posters-content p {
+    font-family:'Helvetica 45 Light';
+    color: #000;
+    font-size: 14px;
+    padding-left: 66px;
+}
+
+.posters-content ul {
+    font-family:'Helvetica 45 Light';
+    color: #000;
+    font-size: 14px;
+    padding-left: 55px;
+}
+
+
+.posters-content {
+    padding-bottom: 6%;
+}
+
+#sendposter{
+    width: 100%;
+}

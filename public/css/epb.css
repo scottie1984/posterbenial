@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Helvetica 45 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica 45 Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff');
+}
+
+body, html { 
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family:'Helvetica 45 Light';
+    font-style: normal; 
+}
+
+h1, h2, span, p 
+{     
+    font-family:'Helvetica 45 Light';
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+#charger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99; 
+}
+
+#charger-status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../imgs/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
+#main-content {
+     overflow: hidden;
+}
+
+.pagetitle { 
+    color: #fff !important; 
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+	font-size: 48px;
+}
+
+img.slide {
+    width: 100%; 
+    z-index: -9999999; 
+    position: absolute;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    left: 703px;
+    display: none;
+}
+
+.image-section {
+    position: fixed;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+}
+
+.posters-content {
+    position: static;
+    overflow: hidden; 
+    padding-bottom: 6%;
+}
+
+.posters-content section {
+    margin-top: 15%;
+    font-family:'Helvetica 45 Light';
+    position: relative; 
+    overflow: hidden;
+    top: 0; 
+    padding-bottom: 20px;
+    height: 690px;
+    font-weight: 580;
+}
+
+#about-text{
+    background-color: rgba(237,106,144,0.75);
+}
+
+#call-text{
+    background-color: rgba(97,136,197,0.75);
+}
+
+#upload-text{
+    height: 100%;
+    width: 570px;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    margin-left: 15%;
+    background: url('../imgs/upload-back.jpg') repeat-y rgba(255,255,255,0.85);
+}
+
+#selected-text{
+    background-color: rgba(220,129,179,0.75);
+}
+
+#jury-text{
+    background-color: rgba(249,177,60,0.75);
+}
+
+#history-text{
+    background-color: rgba(157,85,157,0.75);
+}
+
+#contact-text{
+    background-color: rgba(89,182,113,0.75);
+}
+
+.posters-content-wrapper {
+    overflow: hidden;
+}
+
+.posters-content h2 {
+    color: #fff;
+    font-family:'Helvetica 45 Light';
+    padding-left: 38px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.posters-content p {
+    font-family:'Helvetica 45 Light';
+    color: #fff;
+    font-size: 12px;
+    padding-left: 40px;
+}
+
+.posters-content ul {
+    font-family:'Helvetica 45 Light';
+    color: #fff;
+    font-size: 12px;
+    padding-left: 55px;
+}
+
+.left{
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 370px;
+    background-color: rgb(255, 255, 255);    
+}
+
+.logo{
+    width: 370px;
+    height: 386px;
+    z-index: 1;
+}
+
+.social{
+    width: 370px;
+    height: 64px;
+    z-index: 1;
+    margin-top: 30px;
+    padding-left: 22px;
+}
+
+.languages{
+    height: 24px;
+    z-index: 5;
+    margin-top: 2%;
+    text-align: right;
+    padding-left: 45%;
+    position: static;
+}
+
+#languages-body > ul{
+    height: 24px;
+}
+
+#languages-body > li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 3px;
+    padding: 0px;
+}
+
+#languages-body > li > a {
+    padding: 0px;
+    text-decoration: none;
+}
+
+#social-body > ul{
+    width: 256px;
+    margin: 0px;
+}
+
+#social-body > li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#social-body > li > a {
+    display: block;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#social-body > li > a > img {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+} 
+
+#social-body > li > a:hover { 
+    background-color: rgba(255,255,255,0.25);
+}
+
+.menu {
+    width: 370px;
+    z-index: 1; 
+}
+
+#menu-body {
+    background-color: rgb(255, 255, 255);
+    font-size: 16px; 
+    padding: 0;
+}
+
+#menu-body > li {
+    display: block;
+}
+
+#menu-body .about-menu {
+    background-color: #ed6a90;
+}
+#menu-body .call-menu {
+    background-color: #6188c5;
+}
+#menu-body .selected-menu {
+    background-color: #dc81b3;
+}
+#menu-body .jury-menu {
+    background-color: #f9b13c;
+}
+#menu-body .history-menu {
+    background-color: #9d559d;
+}
+#menu-body .contact-menu {
+    background-color: #59b671;
+}
+
+#menu-body > li > a {
+    font-family:'Helvetica 45 Light';
+    padding: 10px 50px 10px 100px; 
+    text-decoration: none; 
+    display: block;
+    color: #fff; 
+    font-weight: 500;
+}
+
+#menu-body > .active > a,
+#menu-body > li > a:hover { 
+    background-color: rgba(255,255,255,0.25);
+}
+
+
+#responsive {
+    font-size: 16px;
+    padding: 0;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#responsive li {
+    display: block;
+}
+
+#responsive li a {
+    font-family:'Helvetica 45 Light';
+    color: #000; 
+    text-decoration: none; 
+    padding: 10px 0;
+    display: block;
+}
+
+#responsive > .active > a,
+#responsive li a:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.footer {
+    font-family:'Helvetica 45 Light';
+    color: #6188c5; 
+    margin-left: 95px;
+    font-size: 14px;
+    margin-top: 40px;
+    position: static;
+}
+
+.posters-content {
+    padding-bottom: 6%;
+}
+
+#upload-posters
+{
+    margin: 0, auto;
+}
+
+#upload-body li
+{
+    margin: 80px 10px 20px 60px; 
+    display: inline-block;
+}
+
+#upload-body li a
+{
+    width: 200px;
+    height: 30px;
+    background-color: #6188c5;   
+    color: #fff;
+    font-family:'Helvetica 45 Light';
+    font-size: 21px;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#upload-body > .active > a,
+#upload-body > li > a:hover{
+    background-color: #dc81b3;
+}

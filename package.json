@@ -1,0 +1,43 @@
+{
+  "name": "web_app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "4.12.2",
+    "static-favicon": "1.0.2",
+    "morgan": "1.0.1",
+    "cookie-parser": "1.0.1",
+    "body-parser": "1.0.2",
+    "ejs": "0.8.8",
+    "q": "1.2.0",    "compass": "0.1.0",
+    "lodash": "2.4.1",
+    "mandrill-api": "1.0.41",
+    "mocha": "2.1.0",
+    "cloudinary": "1.1.2",
+    "connect-multiparty": "1.2.5",
+    "async": "0.9.0",
+    "babel": "4.7.7",
+    "debug": "2.1.2",
+    "moment": "2.9.0",
+    "reload": "0.1.0",
+    "mongodb": "1.4.9",
+    "cors" : "2.5.3",
+    "bcrypt-nodejs": "*",
+    "method-override": "^2.2.0",
+    "express-session": "^1.8.2",
+    "passport": "^0.2.1",
+    "passport-facebook": "^1.0.3",
+    "passport-google": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.2",
+    "mongoose" : "*",
+    "connect-flash" : "*",
+    "connect-roles" : "*",
+    "jade" : "*",
+    "image-size": "*",
+    "i18n" : "*"
+  }
+}
