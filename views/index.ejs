@@ -196,19 +196,30 @@
                                   <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 col-lg-offset-1 col-md-offset-1">
 
                                         <p>&nbsp;</p>
-                                        <form action="#" method="post">
+                                        <div id="errorMsg" class="alert alert-danger fade in">
+                                            <strong>Error!</strong> <div id="errorTxt">A problem has been occurred while submitting your data.</div>
+                                        </div>
+                                        <div id="closedMsg" class="alert alert-danger fade in">
+                                            <strong>Sorry!</strong> <div id="errorTxt">This competition is now closed.</div>
+                                        </div>
+                                        <div id="successMsg" class="alert alert-success fade in">
+                                            <a href="#" class="close" data-dismiss="alert">&times;</a>
+                                            <strong>Success!</strong> Your poster has been entered successfully. Good luck!
+                                        </div>
+                                        <form id="updateCreate" enctype="multipart/form-data" action="http://localhost:3000/file" method="post">
 
+                                                <input type="hidden" name="compId" value="5581d030489e0f00008e3798">
                                                 <div class="form-group">
                                                 <label for="first_name">First name:</label>
-                                                    <input type="text" id="first_name" class="form-control" placeholder="First Name" />
+                                                    <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" />
                                                 </div>
                                                 <div class="form-group">
                                                 <label for="last_name">Last name:</label>
-                                                    <input type="text" id="last_name" class="form-control" placeholder="Last Name" />
+                                                    <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Last Name" />
                                                 </div>
                                                 <div class="form-group">
                                                 <label for="country">Country:</label>
-                                                    <select id="country" class="form-control">
+                                                    <select id="country" name="country" class="form-control">
                                                             <option value="" selected="selected">- Select Country -</option>
                                                             <option value="United States">United States</option>
                                                             <option value="United Kingdom">United Kingdom</option>
@@ -455,20 +466,17 @@
                                                 </div>
                                                 <div class="form-group">
                                                 <label for="category">Category:</label>
-                                                    <select id="category" class="form-control">
-                                                            <option value="A">A</option>
-                                                            <option value="B">B</option>
-                                                            <option value="C">C</option>
-                                                            <option value="D">D</option>
+                                                    <select name="category" id="category" class="form-control" required>
+
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                 <label for="email">Email:</label>
-                                                    <input type="text" id="email" class="form-control" placeholder="Email Address" />
+                                                    <input type="text" id="email" name="email" class="form-control" placeholder="Email Address" />
                                                 </div>
                                                 <div class="form-group">
                                                 <label for="poster_file">Attach Poster:</label>
-                                                    <input type="file" id="poster_file">
+                                                    <input type="file" class="form-control" name="fileToUpload" id="poster_file">
                                                     <p class="help-block">.JPG file - 500 px X 700 px - 72 dpi - RGB mode.</p>
                                                 </div>
                                                 <button type="submit" class="btn btn-primary" id="sendposter">Upload Poster</button>
@@ -492,6 +500,41 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
+        <script>
+            // wait for the DOM to be loaded
+            $(document).ready(function() {
+                $("#errorMsg").hide();
+                $("#successMsg").hide();
+                $("#closedMsg").hide();
+                $.get( "http://localhost:3000/file/blue_eT2/open", function( data ) {
+                  if(data === "Competition closed") {
+                     $("#updateCreate").hide();
+                     $("#closedMsg").show();
+                  }
+                });
+                $.get( "http://localhost:3000/file/blue_eT2/categories", function( data ) {
+                  $.each(data, function (i, item) {
+                      $('#category').append($('<option>', {
+                          value: item.value,
+                          text : item.text
+                      }));
+                  });
+                });
+                // bind 'myForm' and provide a simple callback function
+                $('#updateCreate').ajaxForm(function(response) {
+                    if (response === "File uploaded") {
+                       $("#errorMsg").hide();
+                       $("#successMsg").show();
+                       $("#updateCreate").hide();
+                       successMsg
+                    } else {
+                       $("#errorMsg").show();
+                       $("#errorTxt").text(response);
+                    }
+                });
+            });
+        </script>
 
     </body>
 </html>
