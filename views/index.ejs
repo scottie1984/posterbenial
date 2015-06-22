@@ -206,9 +206,9 @@
                                             <a href="#" class="close" data-dismiss="alert">&times;</a>
                                             <strong>Success!</strong> Your poster has been entered successfully. Good luck!
                                         </div>
-                                        <form id="updateCreate" enctype="multipart/form-data" action="http://localhost:3000/file" method="post">
+                                        <form id="updateCreate" enctype="multipart/form-data" action="http://46.101.59.137/file" method="post">
 
-                                                <input type="hidden" name="compId" value="5581d030489e0f00008e3798">
+                                                <input type="hidden" name="compId" value="55886d9c3a369c4c163a1142">
                                                 <div class="form-group">
                                                 <label for="first_name">First name:</label>
                                                     <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name" />
@@ -507,13 +507,13 @@
                 $("#errorMsg").hide();
                 $("#successMsg").hide();
                 $("#closedMsg").hide();
-                $.get( "http://localhost:3000/file/blue_eT2/open", function( data ) {
+                $.get( "http://46.101.59.137/file/posterbenial_vIl/open", function( data ) {
                   if(data === "Competition closed") {
                      $("#updateCreate").hide();
                      $("#closedMsg").show();
                   }
                 });
-                $.get( "http://localhost:3000/file/blue_eT2/categories", function( data ) {
+                $.get( "http://46.101.59.137/file/posterbenial_vIl/categories", function( data ) {
                   $.each(data, function (i, item) {
                       $('#category').append($('<option>', {
                           value: item.value,
