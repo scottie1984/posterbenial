@@ -522,7 +522,8 @@
                   });
                 });
                 // bind 'myForm' and provide a simple callback function
-                $('#updateCreate').ajaxForm(function(response) {
+                $('#updateCreate').ajaxForm({
+                success: function(response) {
                     if (response === "File uploaded") {
                        $("#errorMsg").hide();
                        $("#successMsg").show();
@@ -531,6 +532,11 @@
                        $("#errorMsg").show();
                        $("#errorTxt").text(response);
                     }
+                },
+                error: function(xhr, textStatus, errorThrown) {
+                    $("#errorMsg").show();
+                    $("#errorTxt").text("Image uploaded is too large.");
+                }
                 });
             });
         </script>
