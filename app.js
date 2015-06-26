@@ -28,7 +28,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(favicon(__dirname + '/images/favi.png'));
+app.use(favicon(__dirname + '/public/imgs/logo-sm.jpg'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
