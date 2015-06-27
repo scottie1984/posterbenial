@@ -106,7 +106,7 @@ img.slide {
     overflow: hidden;
     top: 0; 
     padding-bottom: 20px;
-    height: 690px;
+    height: 100%;
     font-weight: 580;
 }
 
@@ -158,37 +158,56 @@ img.slide {
 .posters-content p {
     font-family:'Helvetica 45 Light';
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.subtitle {
+    font-family:'Helvetica 45 Light';
+    color: #fff;
+    font-size: 14px;
+    padding-left: 30px;
 }
 
 .posters-content ul {
     font-family:'Helvetica 45 Light';
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 55px;
+    padding-right: 30px;
+}
+
+.posters-content ol {
+    font-family:'Helvetica 45 Light';
+    color: #fff;
+    font-size: 13px;
+    padding-left: 55px;
+    padding-right: 30px;
 }
 
 .left{
     position: fixed;
     height: 100%;
     overflow: auto;
-    width: 370px;
+    width: 17%;
+    min-width: 250px !important;
+    max-width: 370px !important;
     background-color: rgb(255, 255, 255);    
+    text-align: center;
 }
 
 .logo{
-    width: 370px;
-    height: 386px;
     z-index: 1;
+    position: relative;
 }
 
 .social{
-    width: 370px;
-    height: 64px;
+    width: 100%;
     z-index: 1;
-    margin-top: 30px;
-    padding-left: 22px;
+    margin-top: 10%;
+    position: relative;
 }
 
 .languages{
@@ -197,7 +216,7 @@ img.slide {
     margin-top: 2%;
     text-align: right;
     padding-left: 45%;
-    position: static;
+    position: relative;
 }
 
 #languages-body > ul{
@@ -217,9 +236,8 @@ img.slide {
     text-decoration: none;
 }
 
-#social-body > ul{
-    width: 256px;
-    margin: 0px;
+#social-body{
+    width: 100%;
 }
 
 #social-body > li {
@@ -242,6 +260,8 @@ img.slide {
     padding: 0px;
     border: 0px;
     margin: 0px;
+    width: 60px;
+    height: 60px;
 } 
 
 #social-body > li > a:hover { 
@@ -249,14 +269,18 @@ img.slide {
 }
 
 .menu {
-    width: 370px;
+    width: 100%;
     z-index: 1; 
+    max-width: 370px !important;
+    min-width: 250px !important;
+    position: relative;
 }
 
 #menu-body {
     background-color: rgb(255, 255, 255);
-    font-size: 16px; 
+    font-size: 1.7em; 
     padding: 0;
+    width: 100%;
 }
 
 #menu-body > li {
@@ -284,7 +308,7 @@ img.slide {
 
 #menu-body > li > a {
     font-family:'Helvetica 45 Light';
-    padding: 10px 50px 10px 100px; 
+    padding: 0.5em 0.5em 0.5em 0.5em; 
     text-decoration: none; 
     display: block;
     color: #fff; 
@@ -323,10 +347,8 @@ img.slide {
 .footer {
     font-family:'Helvetica 45 Light';
     color: #6188c5; 
-    margin-left: 95px;
-    font-size: 14px;
-    margin-top: 40px;
-    position: static;
+    font-size: 1.2em;
+    margin-top: 30%;
 }
 
 .posters-content {
@@ -335,31 +357,115 @@ img.slide {
 
 #upload-posters
 {
-    margin: 0, auto;
+    width: 100%;
+    position: relative;
+}
+
+#upload-body{
+    margin:0px;
+    margin-top: 18%;
+    margin-left: -15%;
 }
 
 #upload-body li
 {
-    margin: 80px 10px 20px 60px; 
     display: inline-block;
+    list-style: none;
 }
 
 #upload-body li a
 {
-    width: 200px;
     height: 30px;
     background-color: #6188c5;   
     color: #fff;
     font-family:'Helvetica 45 Light';
-    font-size: 21px;
-    padding: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
+    font-size: 1.8em;
+    padding: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-decoration: none;
     font-weight: 500;
+    margin: 0;
 }
 
 #upload-body > .active > a,
 #upload-body > li > a:hover{
     background-color: #dc81b3;
+}
+
+@media all and (max-width: 1279px){
+    .left{
+        width:100% !important;
+        height:100%;
+        max-width: 100% !important;
+    }
+    .menu{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+}
+
+@media all and (max-width: 1366px){
+    #social-body > li > a > img {
+        width:40px;
+        height:40px;
+    }
+
+    #menu-body {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.3em; 
+    padding: 0;
+    }
+
+    .logo img{
+        width: 231px;
+        height: 242px;
+    }
+
+    #upload-body li a
+    {
+        font-size: 1.3em;
+    }
+}
+
+@media all and (max-width: 1600px) and (min-width: 1367px){
+    #menu-body {
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4em; 
+    padding: 0;
+    }
+
+    #social-body > li > a > img {
+        width:47px;
+        height:47px;
+    }
+    #upload-body li a
+    {
+        font-size: 1.4em;
+    }
+    .social {
+        margin-top: 23%;
+    }
+    .footer {
+        margin-top: 70%;
+    }
+}
+
+@media all and (max-width: 1980px) and (min-width: 1601px){
+    .footer {
+        margin-top: 65%;
+    }
+
+    .social {
+        margin-top: 20%;
+    }
+
+    #social-body > li > a > img {
+        width:57px;
+        height:57px;
+    }
+
 }
