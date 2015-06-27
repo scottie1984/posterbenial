@@ -507,13 +507,13 @@
                 $("#errorMsg").hide();
                 $("#successMsg").hide();
                 $("#closedMsg").hide();
-                $.get( "http://46.101.59.137/file/posterbenial_vIl/open", function( data ) {
+                $.get( "http://postercompetition.com/file/posterbenial_vIl/open", function( data ) {
                   if(data === "Competition closed") {
                      $("#updateCreate").hide();
                      $("#closedMsg").show();
                   }
                 });
-                $.get( "http://46.101.59.137/file/posterbenial_vIl/categories", function( data ) {
+                $.get( "http://postercompetition.com/file/posterbenial_vIl/categories", function( data ) {
                   $.each(data, function (i, item) {
                       $('#category').append($('<option>', {
                           value: item.value,
