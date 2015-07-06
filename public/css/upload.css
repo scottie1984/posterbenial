@@ -90,7 +90,7 @@ img {
 
 label
 {
-    font-size: 14px;
+    font-size: 1.5em;
 }
 
 textarea{
@@ -100,14 +100,14 @@ textarea{
 #upload-text p {
     font-family:'Helvetica 45 Light';
     color: #000;
-    font-size: 14px;
+    font-size: 1em;
     padding-left: 60px;
 }
 
 #upload-text ul {
     font-family:'Helvetica 45 Light';
     color: #000;
-    font-size: 14px;
+    font-size: 1em;
     padding-left: 55px;
 }
 

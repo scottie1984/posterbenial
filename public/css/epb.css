@@ -393,18 +393,232 @@ img.slide {
     background-color: #dc81b3;
 }
 
+#participate{
+    height: 100%;
+    width: 65%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background: url('../imgs/upload-back.jpg') repeat-y rgba(255,255,255,0.85);
+    -webkit-box-shadow: 0px 1px 3px #fff, 0px 1px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 1px 3px #fff, 0px 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 1px 3px #fff, 0px 1px 3px rgba(0,0,0,0.3);
+}
+
+#participate h2 {
+    color: #000;
+    font-family:'Helvetica 45 Light';
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+#participate h4 {
+    color: #000;
+    font-family:'Helvetica 45 Light';
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-weight: 600;
+}
+
+#participate p {
+    font-family:'Helvetica 45 Light';
+    color: #000;
+    font-size: 1.5em;
+    padding-left: 5%;
+}
+
+#participate ul {
+    font-family:'Helvetica 45 Light';
+    color: #000;
+    font-size: 14px;
+    padding-left: 55px;
+}
+
+
+#sendposter{
+    width: 100%;
+}
+
+#about-body{
+    background-color: rgba(237,106,144,0.75);
+}
+
+#call-body{
+    background-color: rgba(97,136,197,0.75);
+}
+
+#selected-body{
+    background-color: rgba(220,129,179,0.75);
+}
+
+#jury-body{
+    background-color: rgba(249,177,60,0.75);
+}
+
+#history-body{
+    background-color: rgba(157,85,157,0.75);
+}
+
+#contact-body{
+    background-color: rgba(89,182,113,0.75);
+}
+
+@media all and (max-width: 800px){
+    #participate{
+        width: 75%;
+        height: 100%;
+    }
+    .left{
+        width:100% !important;
+        max-width: 100% !important;
+        margin-bottom: -7%;
+        position: static;
+    }
+    .logo{
+        margin: 0;
+    }
+    .active{
+        display: none !important;
+    }
+    #menu-body{
+        display: none !important;
+    }
+
+    #social-body{
+        display: none !important;
+    }
+
+    #upload-body{
+        display: none !important;
+    }
+    
+    #languages-body{
+        display: none !important;   
+    }
+
+    #footer-body{
+        display: none !important;   
+    }
+
+    #about-text, #call-text, #selected-text, #jury-text, #history-text, #contact-text, #upload-text{
+        display: none !important;
+    }
+
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
+    }
+
+    #selected-body{
+        display: none !important;   
+    }
+
+    #mobile-version{
+        display: block !important;   
+    }
+
+    .posters-content section {
+        margin: 0;
+        font-family:'Helvetica 45 Light';
+        position: relative; 
+        overflow: hidden;
+        top: 0; 
+        padding-bottom: 20px;
+        height: 100%;
+        font-weight: 580;
+    }
+    .logo img{
+        width: 250px;
+        height: 262px;
+    }
+
+}
+
+@media all and (max-width: 1278px) and (min-width: 1024px){
+    #participate{
+        width: 55% !important;
+        height: 100%;
+    }
+    .left{
+        width:100% !important;
+        max-width: 100% !important;
+        margin-bottom: -25%;
+        position: static;
+    }
+    #selected-body{
+        display: none !important;   
+    }
+    .logo img{
+        width: 250px;
+        height: 262px;
+    }
+}
+
 @media all and (max-width: 1279px){
     .left{
         width:100% !important;
-        height:100%;
         max-width: 100% !important;
+        margin-bottom: -7%;
+        position: static;
     }
-    .menu{
-        display: none;
+    .logo img{
+        width: 250px;
+        height: 262px;
     }
 
-    .social{
-        display: none;
+    .logo{
+        margin: 0;
+    }
+    .active{
+        display: none !important;
+    }
+    #menu-body{
+        display: none !important;
+    }
+
+    #social-body{
+        display: none !important;
+    }
+
+    #upload-body{
+        display: none !important;
+    }
+    
+    #languages-body{
+        display: none !important;   
+    }
+
+    #footer-body{
+        display: none !important;   
+    }
+
+    #about-text, #call-text, #selected-text, #jury-text, #history-text, #contact-text, #upload-text{
+        display: none !important;
+    }
+
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
+    }
+
+    #selected-body{
+        display: none !important;   
+    }
+
+    #mobile-version{
+        display: block !important;   
+    }
+
+    .posters-content section {
+        margin: 0;
+        font-family:'Helvetica 45 Light';
+        position: relative; 
+        overflow: hidden;
+        top: 0; 
+        padding-bottom: 20px;
+        height: 100%;
+        font-weight: 580;
     }
 }
 
@@ -429,6 +643,10 @@ img.slide {
     {
         font-size: 1.3em;
     }
+
+    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
+        display: none;
+    }
 }
 
 @media all and (max-width: 1600px) and (min-width: 1367px){
@@ -452,6 +670,9 @@ img.slide {
     .footer {
         margin-top: 70%;
     }
+    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
+        display: none;
+    }
 }
 
 @media all and (max-width: 1980px) and (min-width: 1601px){
@@ -468,4 +689,7 @@ img.slide {
         height:57px;
     }
 
+    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
+        display: none;
+    }
 }
