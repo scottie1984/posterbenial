@@ -22,6 +22,9 @@ jQuery(function($) {
     
     $("#menu-body a, #responsive a, #upload-body a").on('click',function(e){
             e.preventDefault();
+            $("#errorMsg").hide();
+           $("#successMsg").hide();
+           $("#updateCreate").show();
             if (menu == false)
             {
                 menu = true;
