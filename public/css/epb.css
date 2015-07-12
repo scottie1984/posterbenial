@@ -199,24 +199,20 @@ img.slide {
 }
 
 .logo{
-    z-index: 1;
-    position: relative;
+    width: 100%;
+    position: static;
 }
 
 .social{
     width: 100%;
-    z-index: 1;
     margin-top: 10%;
-    position: relative;
 }
 
 .languages{
     height: 24px;
-    z-index: 5;
     margin-top: 2%;
     text-align: right;
     padding-left: 45%;
-    position: relative;
 }
 
 #languages-body > ul{
@@ -270,10 +266,8 @@ img.slide {
 
 .menu {
     width: 100%;
-    z-index: 1; 
     max-width: 370px !important;
     min-width: 250px !important;
-    position: relative;
 }
 
 #menu-body {
@@ -358,7 +352,6 @@ img.slide {
 #upload-posters
 {
     width: 100%;
-    position: relative;
 }
 
 #upload-body{
@@ -466,6 +459,22 @@ img.slide {
     background-color: rgba(89,182,113,0.75);
 }
 
+#mobile-version{
+    position: relative;
+    z-index: -99999999;
+    width: 100% !important;
+    height: 100px !important;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mobile-version > div > section{
+    margin: 0 auto;
+}
+#participate{
+    margin-top: 10%;
+}
+
 @media all and (max-width: 800px){
     #participate{
         width: 75%;
@@ -474,51 +483,12 @@ img.slide {
     .left{
         width:100% !important;
         max-width: 100% !important;
-        margin-bottom: -7%;
         position: static;
+        margin-bottom: -10%;
     }
     .logo{
         margin: 0;
     }
-    .active{
-        display: none !important;
-    }
-    #menu-body{
-        display: none !important;
-    }
-
-    #social-body{
-        display: none !important;
-    }
-
-    #upload-body{
-        display: none !important;
-    }
-    
-    #languages-body{
-        display: none !important;   
-    }
-
-    #footer-body{
-        display: none !important;   
-    }
-
-    #about-text, #call-text, #selected-text, #jury-text, #history-text, #contact-text, #upload-text{
-        display: none !important;
-    }
-
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
-        display: block !important;
-    }
-
-    #selected-body{
-        display: none !important;   
-    }
-
-    #mobile-version{
-        display: block !important;   
-    }
-
     .posters-content section {
         margin: 0;
         font-family:'Helvetica 45 Light';
@@ -533,10 +503,23 @@ img.slide {
         width: 250px;
         height: 262px;
     }
+    #selected-body{
+        display: none !important;   
+    }
 
+    #mobile-version{
+        position: relative;
+        z-index: 1 !important;
+        height: auto !important;
+    }
+    
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
+    }
 }
 
-@media all and (max-width: 1278px) and (min-width: 1024px){
+
+@media all (max-width: 1024px){
     #participate{
         width: 55% !important;
         height: 100%;
@@ -544,8 +527,9 @@ img.slide {
     .left{
         width:100% !important;
         max-width: 100% !important;
-        margin-bottom: -25%;
+        height: 100%;
         position: static;
+        margin-bottom: -25%;
     }
     #selected-body{
         display: none !important;   
@@ -554,26 +538,58 @@ img.slide {
         width: 250px;
         height: 262px;
     }
+
+    #mobile-version{
+        position: relative;
+        z-index: 1 !important;
+        height: auto !important;
+    }
+    
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
+    }
 }
 
-@media all and (max-width: 1279px){
+@media all and (max-width: 1279px) and (min-width: 1024px){
+    #participate{
+        width: 55% !important;
+        height: 100%;
+    }
     .left{
         width:100% !important;
         max-width: 100% !important;
-        margin-bottom: -7%;
+        height: 100%;
         position: static;
+        margin-bottom: -25%;
+    }
+    #selected-body{
+        display: none !important;   
     }
     .logo img{
         width: 250px;
         height: 262px;
     }
 
-    .logo{
-        margin: 0;
+    #mobile-version{
+        position: relative;
+        z-index: 1 !important;
+        height: auto !important;
     }
-    .active{
-        display: none !important;
+    
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
     }
+}
+
+@media all and (max-width: 1279px){
+    .left{
+        width:100% !important;
+        max-width: 100% !important;
+        height: 100%;
+        position: static;
+        margin-bottom: -25%;
+    }
+
     #menu-body{
         display: none !important;
     }
@@ -598,27 +614,18 @@ img.slide {
         display: none !important;
     }
 
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
-        display: block !important;
-    }
-
     #selected-body{
         display: none !important;   
     }
 
     #mobile-version{
-        display: block !important;   
+        position: relative;
+        z-index: 1 !important;
+        height: auto !important;
     }
-
-    .posters-content section {
-        margin: 0;
-        font-family:'Helvetica 45 Light';
-        position: relative; 
-        overflow: hidden;
-        top: 0; 
-        padding-bottom: 20px;
-        height: 100%;
-        font-weight: 580;
+    
+    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+        display: block !important;
     }
 }
 
@@ -643,10 +650,6 @@ img.slide {
     {
         font-size: 1.3em;
     }
-
-    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
-        display: none;
-    }
 }
 
 @media all and (max-width: 1600px) and (min-width: 1367px){
@@ -670,9 +673,6 @@ img.slide {
     .footer {
         margin-top: 70%;
     }
-    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
-        display: none;
-    }
 }
 
 @media all and (max-width: 1980px) and (min-width: 1601px){
@@ -687,9 +687,5 @@ img.slide {
     #social-body > li > a > img {
         width:57px;
         height:57px;
-    }
-
-    #about-body, #call-body, #selected-body, #jury-body, #history-body, #contact-body, #participate{
-        display: none;
     }
 }
