@@ -1,7 +1,7 @@
 {
-    "menu1": "Acerca de",
-    "menu2": "Condiciones de Participación",
-    "menu3": "Selected Posters",
+    "menu1": "Acerca",
+    "menu2": "Convocatoria",
+    "menu3": "Poster Seleccionados",
     "menu4": "Jurado",
     "menu5": "Historia",
     "menu6": "Contacto",
@@ -60,5 +60,6 @@
     "CP25": "25 de Septiembre del 2016",
     "CP26": "Apertura de la Exhibición en Quito, Ecuador",
     "JuryHeading": "Jurado",
-    "Jury1": "Próximamente..."
+    "Jury1": "Próximamente...",
+    "Upload": "Subir Poster"
 }
