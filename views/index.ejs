@@ -264,7 +264,7 @@
                                         </div>
                                         <form id="updateCreate" enctype="multipart/form-data" action="http://postercompetition.com/file" method="post">
 
-                                                <input type="hidden" name="compId" value="55886d9c3a369c4c163a1142">
+                                                <input type="hidden" name="compId" value="55b293560dc3f80a27693cc2">
 
                                                 <div class="form-group">
                                                 <label for="first_name">First name:</label>
@@ -725,7 +725,7 @@
                                         </div>
                                         <form id="updateCreate" enctype="multipart/form-data" action="http://postercompetition.com/file" method="post">
 
-                                                <input type="hidden" name="compId" value="55886d9c3a369c4c163a1142">
+                                                <input type="hidden" name="compId" value="55b293560dc3f80a27693cc2">
 
                                                 <div class="form-group">
                                                 <label for="first_name">First name:</label>
@@ -1027,13 +1027,13 @@
                 $("#errorMsg").hide();
                 $("#successMsg").hide();
                 $("#closedMsg").hide();
-                $.get( "http://postercompetition.com/file/posterbenial_vIl/open", function( data ) {
+                $.get( "http://postercompetition.com/file/Ecuador_Poster_Bienal_Bpe/open", function( data ) {
                   if(data === "Competition closed") {
                      $("#updateCreate").hide();
                      $("#closedMsg").show();
                   }
                 });
-                $.get( "http://postercompetition.com/file/posterbenial_vIl/categories", function( data ) {
+                $.get( "http://postercompetition.com/file/Ecuador_Poster_Bienal_Bpe/categories", function( data ) {
                   $.each(data, function (i, item) {
                       $('#category').append($('<option>', {
                           value: item.value,
