@@ -61,5 +61,22 @@
     "CP26": "Opening exhibition in Quito, Ecuador",
     "JuryHeading": "Jury",
     "Jury1": "Coming soon…",
-    "Upload": "Upload Poster"
+    "Upload": "Upload Poster",
+    "uploadPart": "Participate / Upload Poster",
+    "uploadSpec": "Specifications:",
+    "uploadType": "JPG:",
+    "uploadDim": "500 px X 700 px",
+    "uploadDpi": "72 dpi",
+    "uploadMode": "RGB color mode",
+    "uploadName": "First name:",
+    "uploadSurname": "Last name:",
+    "uploadCountry": "Country:",
+    "uploadCategory": "Category:",
+    "uploadEmail": "Email:",
+    "uploadAttach": "Attach Poster:",
+    "uploadHelp": ".JPG file - 500 px X 700 px - 72 dpi - RGB mode.",
+    "uploadPoster": "Upload Poster",
+    "successMain":"Success!",
+    "successSec": "Your poster has been entered successfully. Good luck!",
+    "errorMsg": "The file size needs to be 500 px X 700 px and under 250kb"
 }
