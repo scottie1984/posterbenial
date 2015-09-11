@@ -10,7 +10,6 @@ jQuery(function($) {
     
     $(document).ready( function() {
 
-
         var defaultImgSrc = $('img.main-img').attr('src');
         $.backstretch(defaultImgSrc, {speed: 500});
     
@@ -28,12 +27,12 @@ jQuery(function($) {
                 menu = true;
                 
                 var name = $(this).attr('href');
-                //$('#menu-body li').removeClass('active');
-                //$('#responsive li').removeClass('active');
-                //$('#upload-body li').removeClass('active');
+                $('#menu-body li').removeClass('active');
+                $('#responsive li').removeClass('active');
+                $('#upload-body li').removeClass('active');
 
                 var menuClass = $(this).parent('li').attr('class');
-                //$('.'+menuClass).addClass('active');
+                $('.'+menuClass).addClass('active');
 
                 //$("#responsive").hide();
 
@@ -52,6 +51,8 @@ jQuery(function($) {
                 });
                 
             }
+            $("#successMsg").hide();
+            $("#updateCreate").show();
             return;
     });
         

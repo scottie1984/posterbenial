@@ -232,6 +232,30 @@ img.slide {
     text-decoration: none;
 }
 
+.languages-m{
+    height: 24px;
+    text-align: right;
+}
+
+#languages-m-body > ul{
+    height: 20px;
+    width: 200px;
+    list-style: none;
+    display: inline-block;
+}
+
+#languages-m-body > li {
+    list-style: none;
+    display: inline-block;
+    margin: 3px;
+    padding: 0px;
+}
+
+#languages-m-body > li > a {
+    padding: 0px;
+    text-decoration: none;
+}
+
 #social-body{
     width: 100%;
 }
