@@ -484,10 +484,9 @@ img.slide {
         width:100% !important;
         max-width: 100% !important;
         position: static;
-        margin-bottom: -10%;
     }
     .logo{
-        margin: 0;
+        margin-bottom: 80px;
     }
     .posters-content section {
         margin: 0;
@@ -529,8 +528,8 @@ img.slide {
         max-width: 100% !important;
         height: 100%;
         position: static;
-        margin-bottom: -25%;
-    }
+     }
+
     #selected-body{
         display: none !important;   
     }
