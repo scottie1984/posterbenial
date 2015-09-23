@@ -46,7 +46,7 @@
             </div>
             <div class="upload-posters visible-md visible-lg">
                 <ul id="upload-body">
-                    <li class="upload-menu"><a href="#upload"><%= __('Upload') %></a></li>
+                    <li class="upload-menu"><a id="uploadPoster" href="#upload"><%= __('Upload') %></a></li>
                 </ul>
             </div>
             <div class="social visible-md visible-lg">
@@ -1098,6 +1098,17 @@
                     $("#errorTxtMob").text("Image uploaded is too large.");
                 }
                 });
+
+                $('#uploadPoster').click(function(){
+                	$("#errorMsg").hide();
+					$("#successMsg").hide();
+					$("#closedMsg").hide();
+					$("#errorMsgMob").hide();
+					$("#successMsgMob").hide();
+					$("#closedMsgMob").hide();
+                	document.getElementById("updateCreateMob").reset();
+                	document.getElementById("updateCreate").reset();
+                })
             });
         </script>
 
