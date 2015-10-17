@@ -106,7 +106,7 @@
 	"uploadDim": "500 px X 700 px",
 	"uploadDpi": "72 dpi",
 	"uploadMode": "Modo de color RGB",
-	"uploadSize": "Tamaño máximo 250KB",
+	"uploadSize": "Tamaño máximo 200KB",
 	"uploadName": "Nombres:",
 	"uploadSurname": "Apellidos:",
 	"uploadCountry": "Pais:",

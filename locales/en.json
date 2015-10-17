@@ -106,7 +106,7 @@
 	"uploadDim": "500 px X 700 px",
 	"uploadDpi": "72 dpi",
 	"uploadMode": "RGB color mode",
-	"uploadSize": "Max size 250KB",
+	"uploadSize": "Max size 200KB",
 	"uploadName": "First name:",
 	"uploadSurname": "Last name:",
 	"uploadCountry": "Country:",
