@@ -698,7 +698,7 @@
 
                                                 <div class="form-group">
                                                 <br/><br/>
-                                                <label>Status: </label><label class="status"></label>
+                                                <!--<label>Status: </label><label class="status"></label>-->
                                                 <div class="progress">
 
                                                     <div class="percent"></div>
@@ -1337,7 +1337,7 @@
 
                                                 <div class="form-group">
 												<br/><br/>
-												<label>Status: </label><label class="statusMob"></label>
+												<!--<label>Status: </label><label class="statusMob"></label>-->
 												<div class="progressMob">
 
 													<div class="percentMob"></div>
@@ -1805,16 +1805,16 @@
                 beforeSend: function() {
 					bar.attr('aria-valuenow', 0);
 					bar.css('width', '0%');
-					status.html(' uploading, please wait.');
+					//status.html(' uploading, please wait.');
 				},
 				uploadProgress: function(event, position, total, percentComplete) {
 					bar.attr('aria-valuenow', percentComplete);
 					bar.css('width', percentComplete + '%');
-					status.html(' uploading, please wait.');
+					//status.html(' uploading, please wait.');
 				},
                 success: function(response) {
                     if (response === "File uploaded") {
-                       status.html(' complete.');
+                       //status.html(' complete.');
                        document.getElementById("updateCreateMob").reset();
 					   document.getElementById("updateCreate").reset();
                        $("#errorMsg").hide();
