@@ -698,7 +698,7 @@
 
                                                 <div class="form-group">
                                                 <br/><br/>
-                                                <!--<label>Status: </label><label class="status"></label>-->
+                                                <label class="status"></label>
                                                 <div class="progress">
 
                                                     <div class="percent"></div>
@@ -1337,7 +1337,7 @@
 
                                                 <div class="form-group">
 												<br/><br/>
-												<!--<label>Status: </label><label class="statusMob"></label>-->
+												<label class="statusMob"></label>
 												<div class="progressMob">
 
 													<div class="percentMob"></div>
@@ -1799,22 +1799,22 @@
                   });
                 });
                 var bar = $('.progress-bar');
-				//var status = $('.status');
+				var status = $('.status');
                 // bind 'myForm' and provide a simple callback function
                 $('#updateCreate').ajaxForm({
                 beforeSend: function() {
 					bar.attr('aria-valuenow', 0);
 					bar.css('width', '0%');
-					//status.html(' uploading, please wait.');
+					status.html('Uploading / Cargando');
 				},
 				uploadProgress: function(event, position, total, percentComplete) {
 					bar.attr('aria-valuenow', percentComplete);
 					bar.css('width', percentComplete + '%');
-					//status.html(' uploading, please wait.');
+					status.html('Uploading / Cargando');
 				},
                 success: function(response) {
                     if (response === "File uploaded") {
-                       //status.html(' complete.');
+                       status.html('Complete / Completo');
                        document.getElementById("updateCreateMob").reset();
 					   document.getElementById("updateCreate").reset();
                        $("#errorMsg").hide();
@@ -1824,6 +1824,7 @@
                        $("#errorMsg").show();
                        var response = '<%= __('errorMsg') %>';
                        $("#errorTxt").text(response);
+                       status.html('Error');
                     }
                 },
                 error: function(xhr, textStatus, errorThrown) {
@@ -1834,21 +1835,21 @@
                 });
 
                 var barMob = $('.progress-barMob');
-				//var statusMob = $('.statusMon');
+				var statusMob = $('.statusMon');
                 $('#updateCreateMob').ajaxForm({
                 beforeSend: function() {
 					barMob.attr('aria-valuenow', 0);
 					barMob.css('width', '0%');
-					//statusMob.html(' uploading, please wait.');
+					statusMob.html('Uploading / Cargando');
 				},
 				uploadProgress: function(event, position, total, percentComplete) {
 					barMob.attr('aria-valuenow', percentComplete);
 					barMob.css('width', percentComplete + '%');
-					//statusMob.html(' uploading, please wait.');
+					statusMob.html('Uploading / Cargando');
 				},
                 success: function(response) {
                     if (response === "File uploaded") {
-                    	//statusMob.html(' complete.');
+                    	statusMob.html('Complete / Completo');
 					   document.getElementById("updateCreateMob").reset();
 					   document.getElementById("updateCreate").reset();
                        $("#errorMsgMob").hide();
@@ -1858,6 +1859,7 @@
                        $("#errorMsgMob").show();
                        var response = '<%= __('errorMsg') %>';
                        $("#errorTxtMob").text(response);
+                       statusMob.html('Error');
                     }
                 },
                 error: function(xhr, textStatus, errorThrown) {
