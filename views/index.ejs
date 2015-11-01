@@ -1799,7 +1799,7 @@
                   });
                 });
                 var bar = $('.progress-bar');
-				var status = $('.status');
+				//var status = $('.status');
                 // bind 'myForm' and provide a simple callback function
                 $('#updateCreate').ajaxForm({
                 beforeSend: function() {
@@ -1834,21 +1834,21 @@
                 });
 
                 var barMob = $('.progress-barMob');
-				var statusMob = $('.statusMon');
+				//var statusMob = $('.statusMon');
                 $('#updateCreateMob').ajaxForm({
                 beforeSend: function() {
 					barMob.attr('aria-valuenow', 0);
 					barMob.css('width', '0%');
-					statusMob.html(' uploading, please wait.');
+					//statusMob.html(' uploading, please wait.');
 				},
 				uploadProgress: function(event, position, total, percentComplete) {
 					barMob.attr('aria-valuenow', percentComplete);
 					barMob.css('width', percentComplete + '%');
-					statusMob.html(' uploading, please wait.');
+					//statusMob.html(' uploading, please wait.');
 				},
                 success: function(response) {
                     if (response === "File uploaded") {
-                    	statusMob.html(' complete.');
+                    	//statusMob.html(' complete.');
 					   document.getElementById("updateCreateMob").reset();
 					   document.getElementById("updateCreate").reset();
                        $("#errorMsgMob").hide();
