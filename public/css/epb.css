@@ -5,7 +5,7 @@
     src: local('Helvetica 45 Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff');
 }
 
-body, html { 
+body, html {
     overflow-x: hidden;
 }
 
@@ -13,11 +13,11 @@ body {
     font-size: 1em;
     line-height: 1.4;
     font-family:'Helvetica 45 Light';
-    font-style: normal; 
+    font-style: normal;
 }
 
-h1, h2, span, p 
-{     
+h1, h2, span, p
+{
     font-family:'Helvetica 45 Light';
 }
 
@@ -110,7 +110,7 @@ img {
     right: 0;
     bottom: 0;
     background-color: #fff;
-    z-index: 99; 
+    z-index: 99;
 }
 
 #charger-status {
@@ -129,15 +129,15 @@ img {
      overflow: hidden;
 }
 
-.pagetitle { 
-    color: #fff !important; 
+.pagetitle {
+    color: #fff !important;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
 	font-size: 48px;
 }
 
 img.slide {
-    width: 100%; 
-    z-index: -9999999; 
+    width: 100%;
+    z-index: -9999999;
     position: absolute;
 }
 
@@ -164,16 +164,16 @@ img.slide {
 
 .posters-content {
     position: static;
-    overflow: hidden; 
+    overflow: hidden;
     padding-bottom: 6%;
 }
 
 .posters-content section {
     margin-top: 15%;
     font-family:'Helvetica 45 Light';
-    position: relative; 
+    position: relative;
     overflow: hidden;
-    top: 0; 
+    top: 0;
     padding-bottom: 20px;
     height: 100%;
     font-weight: 580;
@@ -204,7 +204,7 @@ img.slide {
     background-color: rgba(249,177,60,0.75);
 }
 
-#history-text{
+#sponsors-text{
     background-color: rgba(157,85,157,0.75);
 }
 
@@ -263,7 +263,7 @@ img.slide {
     width: 17%;
     min-width: 250px !important;
     max-width: 370px !important;
-    background-color: rgb(255, 255, 255);    
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -351,9 +351,9 @@ img.slide {
     margin: 0px;
     width: 60px;
     height: 60px;
-} 
+}
 
-#social-body > li > a:hover { 
+#social-body > li > a:hover {
     background-color: rgba(255,255,255,0.25);
 }
 
@@ -365,7 +365,7 @@ img.slide {
 
 #menu-body {
     background-color: rgb(255, 255, 255);
-    font-size: 1.7em; 
+    font-size: 1.7em;
     padding: 0;
     width: 100%;
 }
@@ -386,7 +386,7 @@ img.slide {
 #menu-body .jury-menu {
     background-color: #f9b13c;
 }
-#menu-body .history-menu {
+#menu-body .sponsors-menu {
     background-color: #9d559d;
 }
 #menu-body .contact-menu {
@@ -395,15 +395,15 @@ img.slide {
 
 #menu-body > li > a {
     font-family:'Helvetica 45 Light';
-    padding: 0.5em 0.5em 0.5em 0.5em; 
-    text-decoration: none; 
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-decoration: none;
     display: block;
-    color: #fff; 
+    color: #fff;
     font-weight: 500;
 }
 
 #menu-body > .active > a,
-#menu-body > li > a:hover { 
+#menu-body > li > a:hover {
     background-color: rgba(255,255,255,0.25);
 }
 
@@ -420,8 +420,8 @@ img.slide {
 
 #responsive li a {
     font-family:'Helvetica 45 Light';
-    color: #000; 
-    text-decoration: none; 
+    color: #000;
+    text-decoration: none;
     padding: 10px 0;
     display: block;
 }
@@ -433,7 +433,7 @@ img.slide {
 
 .footer {
     font-family:'Helvetica 45 Light';
-    color: #6188c5; 
+    color: #6188c5;
     font-size: 1.2em;
     margin-top: 30%;
 }
@@ -462,7 +462,7 @@ img.slide {
 #upload-body li a
 {
     height: 30px;
-    background-color: #6188c5;   
+    background-color: #6188c5;
     color: #fff;
     font-family:'Helvetica 45 Light';
     font-size: 1.8em;
@@ -544,7 +544,7 @@ img.slide {
     background-color: rgba(249,177,60,0.75);
 }
 
-#history-body{
+#sponsors-body{
     background-color: rgba(157,85,157,0.75);
 }
 
@@ -584,9 +584,9 @@ img.slide {
     .posters-content section {
         margin: 0;
         font-family:'Helvetica 45 Light';
-        position: relative; 
+        position: relative;
         overflow: hidden;
-        top: 0; 
+        top: 0;
         padding-bottom: 20px;
         height: 100%;
         font-weight: 580;
@@ -596,7 +596,7 @@ img.slide {
         height: 262px;
     }
     #selected-body{
-        display: none !important;   
+        display: none !important;
     }
 
     #mobile-version{
@@ -604,8 +604,8 @@ img.slide {
         z-index: 1 !important;
         height: auto !important;
     }
-    
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+
+    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -624,7 +624,7 @@ img.slide {
      }
 
     #selected-body{
-        display: none !important;   
+        display: none !important;
     }
     .logo img{
         width: 250px;
@@ -636,8 +636,8 @@ img.slide {
         z-index: 1 !important;
         height: auto !important;
     }
-    
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+
+    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -655,7 +655,7 @@ img.slide {
         margin-bottom: -25%;
     }
     #selected-body{
-        display: none !important;   
+        display: none !important;
     }
     .logo img{
         width: 250px;
@@ -667,8 +667,8 @@ img.slide {
         z-index: 1 !important;
         height: auto !important;
     }
-    
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+
+    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -693,21 +693,21 @@ img.slide {
     #upload-body{
         display: none !important;
     }
-    
+
     #languages-body{
-        display: none !important;   
+        display: none !important;
     }
 
     #footer-body{
-        display: none !important;   
+        display: none !important;
     }
 
-    #about-text, #call-text, #selected-text, #jury-text, #history-text, #contact-text, #upload-text{
+    #about-text, #call-text, #selected-text, #jury-text, #sponsors-text, #contact-text, #upload-text{
         display: none !important;
     }
 
     #selected-body{
-        display: none !important;   
+        display: none !important;
     }
 
     #mobile-version{
@@ -715,8 +715,8 @@ img.slide {
         z-index: 1 !important;
         height: auto !important;
     }
-    
-    #about-body, #call-body, #jury-body, #history-body, #contact-body, #participate{
+
+    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -729,7 +729,7 @@ img.slide {
 
     #menu-body {
     background-color: rgb(255, 255, 255);
-    font-size: 1.3em; 
+    font-size: 1.3em;
     padding: 0;
     }
 
@@ -747,7 +747,7 @@ img.slide {
 @media all and (max-width: 1600px) and (min-width: 1367px){
     #menu-body {
     background-color: rgb(255, 255, 255);
-    font-size: 1.4em; 
+    font-size: 1.4em;
     padding: 0;
     }
 
