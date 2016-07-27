@@ -7,3 +7,5 @@ views/.DS_Store
 .sass-cache/
 ../.DS_Store
 .idea/
+public/images/Thumbs.db
+*.db

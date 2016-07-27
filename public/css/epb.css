@@ -200,6 +200,10 @@ img.slide {
     background-color: rgba(220,129,179,0.75);
 }
 
+#selected-text > h3{
+    color: #ffffff;
+}
+
 #jury-text{
     background-color: rgba(249,177,60,0.75);
 }
@@ -540,6 +544,10 @@ img.slide {
     background-color: rgba(220,129,179,0.75);
 }
 
+#selected-body > h3{
+    color: #ffffff;
+}
+
 #jury-body{
     background-color: rgba(249,177,60,0.75);
 }
@@ -550,6 +558,19 @@ img.slide {
 
 #contact-body{
     background-color: rgba(89,182,113,0.75);
+}
+
+.selected-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selected-list > li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size:14px;
 }
 
 #mobile-version{
@@ -595,9 +616,6 @@ img.slide {
         width: 250px;
         height: 262px;
     }
-    #selected-body{
-        display: none !important;
-    }
 
     #mobile-version{
         position: relative;
@@ -605,7 +623,7 @@ img.slide {
         height: auto !important;
     }
 
-    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
+    #about-body, #call-body, #jury-body, #selected-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -623,9 +641,6 @@ img.slide {
         position: static;
      }
 
-    #selected-body{
-        display: none !important;
-    }
     .logo img{
         width: 250px;
         height: 262px;
@@ -637,7 +652,7 @@ img.slide {
         height: auto !important;
     }
 
-    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
+    #about-body, #call-body, #jury-body, #selected-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -654,9 +669,6 @@ img.slide {
         position: static;
         margin-bottom: -25%;
     }
-    #selected-body{
-        display: none !important;
-    }
     .logo img{
         width: 250px;
         height: 262px;
@@ -668,7 +680,7 @@ img.slide {
         height: auto !important;
     }
 
-    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
+    #about-body, #call-body, #jury-body, #selected-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -706,17 +718,13 @@ img.slide {
         display: none !important;
     }
 
-    #selected-body{
-        display: none !important;
-    }
-
     #mobile-version{
         position: relative;
         z-index: 1 !important;
         height: auto !important;
     }
 
-    #about-body, #call-body, #jury-body, #sponsors-body, #contact-body, #participate{
+    #about-body, #call-body, #jury-body, #selected-body, #sponsors-body, #contact-body, #participate{
         display: block !important;
     }
 }
@@ -939,16 +947,6 @@ img.slide {
 .jury-modal .modal-backdrop {
     display: none;
     opacity: 0;
-}
-
-.selected-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.selected-list > li {
-  list-style: none;
 }
 
 ::-moz-selection {
