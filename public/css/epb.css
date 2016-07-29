@@ -16,7 +16,7 @@ body {
     font-style: normal;
 }
 
-h1, h2, span, p
+h1, h2, h3, span, p
 {
     font-family:'Helvetica 45 Light';
 }
@@ -202,6 +202,18 @@ img.slide {
 
 #selected-text > h3{
     color: #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#selected-text > ul{
+    margin: 0;
+    padding: 0;
+}
+
+#selected-text > ul > li{
+    margin: 0;
+    padding: 0;
 }
 
 #jury-text{
@@ -546,6 +558,17 @@ img.slide {
 
 #selected-body > h3{
     color: #ffffff;
+    font-size: 16px;
+}
+
+#selected-body > ul{
+    margin: 0;
+    padding: 0;
+}
+
+#selected-body > ul > li{
+    margin: 0;
+    padding: 0;
 }
 
 #jury-body{
@@ -566,7 +589,14 @@ img.slide {
   margin: 0;
 }
 
-.selected-list > li {
+.selected-list > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size:14px;
+}
+
+.selected-list > ul > li {
   list-style: none;
   padding: 0;
   margin: 0;
