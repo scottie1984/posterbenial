@@ -21,6 +21,12 @@ h1, h2, h3, span, p
     font-family:'Helvetica 45 Light';
 }
 
+h3
+{
+    font-size: 16px;
+    color: #fff;
+}
+
 hr {
     display: block;
     height: 1px;
@@ -201,7 +207,6 @@ img.slide {
 }
 
 #selected-text > h3{
-    color: #ffffff;
     color: #ffffff;
     font-size: 16px;
 }
