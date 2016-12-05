@@ -1,8 +1,8 @@
 
 
-Install Node, Mongo via Brew
+Install Node
 npm install
-./start
+npm start
 
 http://localhost:3030 - use browser locale
 http://localhost:3030/es  - goto spanish directly

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" ><![endif]-->
+    <title>Ecuador Poster Bienal</title>
+    <meta name="keywords" content="Bienal, Ecuador, Poster, Poster Bienal, Carteles, Afiches, Cartelismo, Bienal de Cartelismo, Christopher Scott, Cartelismo Ecuatoriano, Poster Design" />
+    <meta name="description" content="Ecuador Poster Bienal | Bienal Ecuatoriana del Cartel" />
+    <meta name="author" content="ecuadorposterbienal.com">
+    <link rel="image_src" href="imgs/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/epb.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+</head>
+<body id="theBody">
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+<script type="text/javascript" src="js/ejs_production.js"></script>
+<script type="text/javascript" src="locales/en.json"></script>
+<script>
+    var data = {
+      __: function(key) {
+        return en[key]
+      }
+    }
+    var html = new EJS({url: 'index.ejs'}).render(data);
+    jQuery(function($) {
+       $('#theBody').append(html)
+    });
+</script>
+</html>
