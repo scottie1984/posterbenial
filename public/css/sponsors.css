@@ -113,3 +113,14 @@
 .fila{
   margin-bottom: 30px;
 }
+
+.zefy {
+  color: #000;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.zefy:hover {
+  color: #000;
+  text-decoration: underline;
+}
